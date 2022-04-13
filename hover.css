@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.new_get_started{
+    margin-top: 60px;
+}
+
+
+.sl_backbtn{
+    margin-right: 10px;
+}
+
+.sl_signup_box{
+    display: flex;
+}
+
+.sl_imagebox{
+    width: 100%;
+    min-height: 100vh;
+
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sl_boxcontent{
+    padding: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.sl_signup_text{
+    margin-bottom: 10px;
+}
+
+.sl_signupcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+.sl_cont{
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color:rgba(66, 66, 67, 1);
+}
+
+
+
+.sl_headingtxt{
+    padding-bottom: 20px;
+
+}
+
+.sl_headingtxt a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sl_card1{
+    display: flex;
+    margin: 18px;
+    color: #FFFFFF;
+}
+
+.sl_card1 .sl_textimg{
+    width: 20%;
+    align-items: center;
+    display: flex;
+}
+
+.sl_card1 .sl_textcontent{
+    width: 70%;
+}
+
+.sl_card1 .sl_arrow{
+    width: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sl_card1 .sl_textcontent .sl_cardheadertext{
+font-family: Roboto;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+
+.sl_card1 .sl_textcontent .sl_cardbodytext{
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+.sl_signupcard2{
+    border-radius: 10px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px #949494;
+    margin-bottom: 20px;
+
+ }
+
+ .sl_signupcard2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+ .sl_signupcard2:hover{
+  
+   background-color: #5ea3ed; 
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateX(10px);
+   transition: all .5s ease-in-out;
+    
+}
+
+.sl_signupcard2:nth-child(2):hover{
+  
+    background-color: #4CAF50; 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     transform: translateX(10px);
+    transition: all .5s ease-in-out;
+    color: #fff;
+     
+ }
+
+.sl_signupcard2:hover{
+  
+    background-color: #1179e7; 
+     color: #fff;
+     
+ }
+.sl_signupcard2 a:hover{
+    text-decoration: none;
+    transform: translateX(10px);
+    transition: all .5s ease-in-out;
+    color: #fff;
+    color: #fff;
+}
+
+
+ 
+
+.sl_card2{
+    display: flex;
+    margin: 18px;
+}
+
+.sl_card2 .sl_textimg{
+    width: 18%;
+    align-items: center;
+    display: flex;
+}
+
+.sl_textimg ion-icon{
+    width: 45px;
+    height: 45px;
+    
+}
+
+
+
+
+.sl_card2 .sl_textcontent{
+    width: 72%;
+}
+
+.sl_card2 .sl_arrow{
+    width: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sl_arrow ion-icon{
+    Width:30px;
+    Height: 30px;
+}
+
+.sl_card2 .sl_textcontent .sl_cardheadertext{
+font-family: Roboto;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.sl_card2 .sl_textcontent .sl_cardbodytext{
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .sl_signup_box{
+        display: block;
+    }
+
+    .sl_imagebox{
+        display: none;
+    }
+    .sl_boxcontent{
+        margin-top: 50px;
+       min-height: auto;
+       width: 100%;
+       padding: 35px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+    }
+
+    .sl_signup_text{
+        margin-bottom: 18px;
+    }
+
+
+
+    .sl_signupcard2{
+        margin-top: 29px;
+        margin-bottom: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 440px){
+    .sl_signup_text{
+        margin-bottom: 11px;
+    }
+    .sl_boxcontent{
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+
+  .sl_signupcard2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  }
+
+
+

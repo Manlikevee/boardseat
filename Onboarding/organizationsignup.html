@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Fira+Sans&family=Manrope:wght@200&family=Montserrat:wght@400;600&family=Poppins&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title>SignUp</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Roboto;
+    }
+    .logo {
+      padding-left: 50px;
+      padding-top: 22px;
+    }
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    .signup-form {
+      width: 50%;
+      margin: auto;
+    }
+
+    .form-header {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 38px;
+      /* or 105% */
+      padding-top: 100px;
+      padding-bottom: 30px;
+      color: #333333;
+    }
+
+    .sub-header {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 13px;
+      /* or 73% */
+      padding-bottom: 30px;
+      color: #424243;
+    }
+
+    .socialbuttons {
+      padding-top: 26px;
+    }
+
+    .signin {
+      color: #377dff;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #a91f2f !important;
+      border-color: #a91f2f !important;
+    }
+
+    .googlebtn {
+      color: #377dff;
+      background-color: #e5f1ff !important;
+      border-color: #e5f1ff !important;
+    }
+
+    .btn-warning {
+      color: #fff;
+      background-color: #377dff !important;
+      border-color: #377dff !important;
+    }
+
+    .divider {
+      display: flex;
+      flex-direction: row;
+    }
+    .divider:before,
+    .divider:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid;
+      margin: auto;
+    }
+    .divider:before {
+      margin-right: 10px;
+    }
+    .divider:after {
+      margin-left: 10px;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .signup-form {
+        width: 90%;
+        margin: auto;
+      }
+      .logo {
+        padding-left: 0;
+        padding-top: 22px;
+        text-align: center;
+      }
+      .form-header {
+        font-size: calc(26px + 6 * ((100vw - 320px) / 680));
+        padding-bottom: 15px;
+        padding-top: 50px;
+      }
+    }
+  </style>
+  <body>
+    <div class="app-wrapper">
+      <div class="logo"> <a href="../index.html"><img src="./images/logo.png" alt="" /></a> </div>
+      <div class="signup-form">
+        <div class="form-header text-center">
+          Tell Us About Your Organization
+        </div>
+        <div class="sub-header text-center">
+          Already have an account?
+          <span class="signin"><a href="Login.html">Sign In</a></span>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="fname" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="lname" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Company Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="inputCity">Company Type</label>
+                <select id="inputCity" class="form-control form-control-lg">
+                  <option selected></option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control form-control-lg"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="info@risktech.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="exampleInputPassword1"
+                />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="exampleInputPassword1">Repeat Password</label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="exampleInputPassword1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="inputCity">Preferred Contact Method</label>
+                <select id="inputCity" class="form-control form-control-lg">
+                  <option selected></option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-4">
+                <label for="inputCity"
+                  >How did you hear about TheBoardSeats</label
+                >
+                <select id="inputCity" class="form-control form-control-lg">
+                  <option selected></option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block my-5">
+            Continue
+          </button>
+        </form>
+
+        <div class="divider">OR</div>
+        <div class="socialbuttons">
+          <button
+            type="submit"
+            class="googlebtn btn btn-block btn-lg text-center my-2"
+          >
+            Book a Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
