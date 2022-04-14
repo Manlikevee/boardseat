@@ -1,0 +1,374 @@
+.search-fields{
+    background-color: skyblue;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 7px;
+
+}
+.input-search{
+    display: flex;
+    align-items: center;
+    flex-grow: 0.6;
+}
+.drop-down{
+    display: flex;
+    align-items: center;
+}
+.input-search input{
+    width: 100%;
+    padding: 6px 0;
+    /* border: 1px solid #ebebeb; */
+    border: none;
+}
+select{
+    height: 20px;
+    width:20px;
+    color: #fff;
+    background-color: #424243;
+    border-radius: 50%;
+    border: none;
+}
+label{
+    margin-right: 9px;
+    /* margin-left: 5px; */
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+/*Style for cards that display the job role*/
+.role-cards-wrapped{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px 25px;
+    /* background-color: blue; */
+    overflow-y: visible;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+.personal-info{
+    margin-top: 8px;
+}
+
+
+
+
+
+
+  
+
+.role-card{
+    padding: 25px 15px;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.company-location,
+.tag-time,
+.com-loc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.com-loc img{
+    margin-right: 3px;
+}
+.role-card-bold{
+    font-weight: bold;
+}
+.role-card-text,
+.service-position p:first-child{
+    color: #424243;
+}
+.tag-time p {
+    border-radius: 15px;
+    background-color: #dc9da4;
+    color: #9e1323;
+    padding: 4px 11px;
+}
+.service-position {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.com-loc{
+    width: 100%;
+
+}
+.com-loc span{
+    display: flex;
+    margin-left: auto;
+}
+.tag-time{
+    margin-top: 15px;
+}
+.flex_cap{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-text p:nth-child(2){
+    border-radius: 15px;
+    background-color: #dc9da4;
+    color: #9e1323;
+    padding: 4px 11px;
+}
+
+/*Style for submitted-application.html*/
+.application-status p{
+    display: inline-block;
+    margin-right: 10px;
+}
+.application-status p:first-child{
+    font-weight: 600;
+    color: #a91f2f;
+}
+.application-status p:nth-child(2){
+    color: #424243
+}
+
+/*Style for saved-application.html*/
+.application-status-saved p{
+    display: inline-block;
+    margin-right: 10px;
+}
+.application-status-saved p:first-child{
+    color: #424243;
+}
+.application-status-saved p:nth-child(2){
+    font-weight: 600;
+    color: #a91f2f;
+}
+.recruit{
+    color: #08A534;
+}
+.not-recruit{
+    color: #A91F2F;
+}
+
+.mine .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 9px;
+  }
+
+  .mine .button3{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+
+  .mine .button3:hover{
+    background-color: #008CBA;
+    color: white;
+  }
+
+.role-card-text{
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+
+    }
+    
+    .personal-info span{
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:rgba(66, 66, 67, 1);
+        ;
+    }
+    
+    
+    .tag-time p{
+        border-radius: 15px;
+        background-color: #dc9da4;
+        color: #9e1323;
+        padding: 4px 11px;
+    }
+
+
+    .topnav {
+       display: flex;
+       flex-direction: row;
+       margin-bottom: 30px;
+      }
+
+      .search-container{
+          width: 100%;
+      }
+
+    .topnav input[type=text] {
+        padding: 14px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: 2px #fff;
+        width: 50%;
+        
+      }
+
+      .topnav .search-container button {
+        padding: 14px 14px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #a91f2f;
+        color: #fff;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+
+      .button-container input[type=button]{
+        padding: 14px 14px;
+        background: #a91f2f;
+        color: #fff;
+        border-radius: 7px;
+        border: #fff;
+        margin-top: 8px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+
+      .profile{
+         width: 100%;
+        
+      }
+
+      .profile img{
+        height: 60px;
+        width: 60px;
+        top: 14px;
+        border-radius: 50%;
+      }
+    
+      ::-webkit-scrollbar {
+        width: 5px;
+        background-color: #b3b3b3;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #8d8d8d;
+        border-radius: 20px;
+        min-height: 20px;
+    }
+
+    .nav-list {
+        background: white;
+        box-shadow: 0px 0px 10px var(--clr-gray200);
+        padding: 1rem 0;
+        border-radius: var(--radius);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      .nav-item {
+        list-style: none;
+        margin-right: 2rem;
+      }
+      
+      .nav-item a {
+        text-decoration: none;
+        color: black;
+        transition: all 200ms ease-in;
+      }
+      
+      .nav-item a:hover {
+        color: var(--clr-primary-dark);
+      }
+      
+      .nav-item:first-child {
+        margin-right: auto;
+        margin-left: 2rem;
+      }
+      
+      .btn-primary {
+      
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        border-radius: var(--radius);
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 200ms ease-in;
+        display: flex;
+       
+      }
+
+      .cont{
+          margin-left: 9px;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+      }
+      
+      .btn-primary:hover {
+        background: var(--clr-primary-hover);
+      }
+      
+      
+  @media only screen and (max-width: 430px) {
+    .role-cards-wrapped {
+        padding-right: 0;
+        /* background-color: blue; */
+        overflow-y: visible;
+    }
+
+      
+
+.role-card{
+    padding: 20px 35px;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+    
+    .role-wrapper {
+        grid-gap: 0;
+        /* background-color: blue; */
+        overflow-y: visible;
+    }
+    .topnav{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    
+    }
+
+    .topnav input[type=text] {
+        width: 75%;
+        margin: auto;
+    }
+
+    .button-container{
+        margin-top: 20px;
+    }
+  }

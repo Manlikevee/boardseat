@@ -1,0 +1,45 @@
+.flexing{
+    width: 100%;
+display: flex;
+flex-direction: row;
+ margin-bottom: 10px;
+}
+
+.listed{
+    width: 30%;
+    padding: 2px;
+}
+
+.newlisting{
+    padding: 7px;
+    background-color: #fff;
+    margin-top: 15px;
+    height: calc(100vh - 17rem);
+    overflow-y: scroll;
+}
+
+
+@media screen and (max-width: 1141px) { 
+.flexing{
+    flex-direction: column;
+}
+.listed{
+    width: 100%;
+    padding: 2px;
+    margin-top: 50px;
+}
+
+.msg-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+}
+
+.newlisting{
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    overflow-x: hidden;
+}
+
+}

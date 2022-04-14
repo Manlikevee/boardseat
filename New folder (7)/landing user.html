@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/dashboard.css">
+        <link rel="stylesheet" href="assets/css/admin.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+
+
+        
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/perfil.jpg" alt="" class="header__img">
+
+                <a href="#" class="header__logo">Bedimcode</a>
+    
+                <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div>
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">Bedimcode</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+    
+                            <a href="index.html" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name">Profile</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="index copy.html" class="nav__dropdown-item">Passwords</a>
+                                        <a href="userprofile.html" class="nav__dropdown-item">Mail</a>
+                                        <a href="userprofile2.html" class="nav__dropdown-item">Accounts</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="index copy 2.html" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon' ></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item">Publish</a>
+                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explore</span>
+                            </a>
+                            <a href="landing admin.html" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name">Saved</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <div class="wrapper">
+                <header>
+                    <div class="name">
+                        <p>Welcome Akin!</p>
+                        <small>Here is What We Have For You Today</small>
+                    </div>
+                </header>
+        
+        
+                <div class="main-content">
+                    <div class="card-wrapper">
+                        <div class="card card-1">
+                            <svg width="64" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y=".973" width="64" height="64" rx="32" fill="#F2994A" fill-opacity=".2" />
+                                <path
+                                    d="m32 17.973-15 7.5 15 7.5 15-7.5-15-7.5ZM17 40.473l15 7.5 15-7.5M17 32.973l15 7.5 15-7.5"
+                                    stroke="#F39C12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="card-text">
+                                <p>40</p><small>Submitted application</small>
+                            </div>
+                        </div>
+                        <div class="card card-2">
+                            <svg width="64" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y=".973" width="64" height="64" rx="32" fill="#BB6BD9" fill-opacity=".2" />
+                                <path d="M33.5 17.973H23a3 3 0 0 0-3 3v24a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3v-16.5l-10.5-10.5Z"
+                                    stroke="#BB6BD9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M33.5 17.973v10.5H44" stroke="#BB6BD9" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="card-text">
+                                <p>24</p><small>Saved application</small>
+                            </div>
+                        </div>
+                        <div class="card card-3">
+                            <svg width="64" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y=".973" width="64" height="64" rx="32" fill="#3498DB" fill-opacity=".2" />
+                                <path
+                                    d="M41 46.473a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM23 28.473a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM33.5 23.973H38a3 3 0 0 1 3 3v10.5M23 28.473v18"
+                                    stroke="#3498DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="card-text">
+                                <p>15</p><small>Role Matches</small>
+                            </div>
+                            
+                        </div>
+        
+        
+        
+                        
+        
+                     <div class="mob">
+                        <div class="activities">
+                            <div class="activities-text"><span>All activities</span></div>
+                            <!-- <div class="activities-icon">
+                                <img src="assets/images/Vector.png" alt="" srcset="">
+                            </div> -->
+        
+                        </div>
+                    </div>
+        
+        
+                    </div>
+                    <div class="flexing">
+                        <div class="all-activities">
+                            <div class="activities-wrapper">
+                                <div class="jobs">
+            
+                                    <div class="jobs-wrapper">
+                                        <div class="job-one">
+                                           <div class="joblogo">
+                                               <div class="joblogoimg">
+                                                <img src="img/linkedin.svg" alt="">
+                                               </div>
+                                               <div class="location">
+                                                <img src="img/Vector (18).png" alt=""><span>Abuja, Nigeria</span>
+                                               </div>
+                                           </div>
+                                           <div class="jobtitle">
+                                            Financial Services
+                                           </div>
+                                           <div class="jobdesc">
+                                            Risk Consulting Director
+                                           </div>
+                    
+                                           <div class="desc_text">We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax</div>
+                                          
+                                           <div class="tag-time">
+                                            <p>Financial Analysis</p>
+                                            <p>Budget planning</p>
+                                            <p>Task management</p>
+                                            <p>Task management</p>    
+                                            
+                                        </div>
+                    
+                                        </div>
+                    
+                    
+                                        <div class="job-one">
+                                            <div class="joblogo">
+                                                <div class="joblogoimg">
+                                                 <img src="img/google.svg" alt="">
+                                                </div>
+                                                <div class="location">
+                                                    <img src="img/Vector (18).png" alt=""><span>Abuja, Nigeria</span>
+                                                </div>
+                                            </div>
+                                            <div class="jobtitle">
+                                             Financial Services
+                                            </div>
+                                            <div class="jobdesc">
+                                             Risk Consulting Director
+                                            </div>
+                     
+                                            <div class="desc_text">We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax.</div>
+                                            <div class="tag-time">
+                                                <p>Financial Analysis</p>
+                                                <p>Budget planning</p>
+                                                <p>Task management</p>
+                                            </div>
+                                         </div>
+                    
+                                         
+                                        <div class="job-one">
+                                            <div class="joblogo">
+                                                <div class="joblogoimg">
+                                                 <img src="img/google.svg" alt="">
+                                                </div>
+                                                <div class="location">
+                                                    <img src="img/Vector (18).png" alt=""><span>Abuja, Nigeria</span>
+                                                </div>
+                                            </div>
+                                            <div class="jobtitle">
+                                             Financial Services
+                                            </div>
+                                            <div class="jobdesc">
+                                             Risk Consulting Director
+                                            </div>
+                     
+                                            <div class="desc_text">We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax.</div>
+                                            <div class="tag-time">
+                                                <p>Financial Analysis</p>
+                                                <p>Budget planning</p>
+                                                <p>Task management</p>
+                                            </div>
+                                         </div>
+        
+                                         
+                                        <div class="job-one">
+                                            <div class="joblogo">
+                                                <div class="joblogoimg">
+                                                 <img src="img/google.svg" alt="">
+                                                </div>
+                                                <div class="location">
+                                                    <img src="img/Vector (18).png" alt=""><span>Abuja, Nigeria</span>
+                                                </div>
+                                            </div>
+                                            <div class="jobtitle">
+                                             Financial Services
+                                            </div>
+                                            <div class="jobdesc">
+                                             Risk Consulting Director
+                                            </div>
+                     
+                                            <div class="desc_text">We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax.</div>
+                                            <div class="tag-time">
+                                                <p>Financial Analysis</p>
+                                                <p>Budget planning</p>
+                                                <p>Task management</p>
+                                            </div>
+                                         </div>
+        
+                                         
+                                        <div class="job-one">
+                                            <div class="joblogo">
+                                                <div class="joblogoimg">
+                                                 <img src="img/google.svg" alt="">
+                                                </div>
+                                                <div class="location">
+                                                    <img src="img/Vector (18).png" alt=""><span>Abuja, Nigeria</span>
+                                                </div>
+                                            </div>
+                                            <div class="jobtitle">
+                                             Financial Services
+                                            </div>
+                                            <div class="jobdesc">
+                                             Risk Consulting Director
+                                            </div>
+                     
+                                            <div class="desc_text">We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax.</div>
+                                            <div class="tag-time">
+                                                <p>Financial Analysis</p>
+                                                <p>Budget planning</p>
+                                                <p>Task management</p>
+                                            </div>
+                                         </div>
+        
+        
+                    
+                                         <div class="job-one">
+                                            <div class="joblogo">
+                                                <div class="joblogoimg">
+                                                 <img src="img/Group 215.png" alt="">
+                                                </div>
+                                                <div class="location">
+                                                    <img src="img/Vector (18).png" alt=""><span>Abuja, Nigeria</span>
+                                                </div>
+                                            </div>
+                                            <div class="jobtitle">
+                                             Financial Services
+                                            </div>
+                                            <div class="jobdesc">
+                                             Risk Consulting Director
+                                            </div>
+                     
+                                            <div class="desc_text">We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax</div>
+                                            <div class="tag-time">
+                                                <p>Financial Analysis</p>
+                                                <p>Budget planning</p>
+                                                <p>Task management</p>
+                                            </div>
+                                         </div>
+                                     
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+        <div class="listed">
+        
+        
+                        <div class="newlisting">
+                            <p class="msg-header">Messages</p>
+                            <div class="msg-wrapper">
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Uzodima Chinonzo</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Isaac Adebanjo</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Mensa Robert</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Uche Ngozi</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Uzodinma Chinonso</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Mensa Robert</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                                <div class="msg-content">
+                                    <div class="images">
+                                        <img src="assets/images/msg-photo.png" alt="">
+                                        <img class="online" src="assets/images/Ellipse 2.1.png" alt="online">
+                                    </div>
+                                    <div>
+                                        <p>Mensa Robert</p><small>Hey, how is your project?</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+             </div>
+                    </div>
+        
+                    </div>
+                    </div>
+                    
+
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,628 @@
+.organizationprofile {
+    width: 85%;
+    padding: 40px;
+    margin: auto;
+}
+
+.formsection{
+  padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.col{ 
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px ;
+
+  }
+
+  .col label {
+    margin-top: 10px;
+      padding-bottom: 5px;
+  }
+
+
+
+  
+  input[type=text], [type=number] {
+    border: none;
+    outline: none;
+    padding: 6px 6px 9px 1px;
+    width: 100%;
+    font-size: 16px;
+    border: solid 1px #949494;
+    margin-bottom: 10px;
+  }
+
+  input:focus {
+    outline: none !important;
+    border: solid 1px #2196F3;
+  }
+
+ .col select {
+    border: none;
+    outline: none;
+    padding: 6px 6px 9px 1px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: solid 1px #949494;
+  }
+
+ .col select:focus {
+    outline: none !important;
+    border: solid 1px #2196F3;
+  }
+
+  .button {
+    border: none;
+    color: #a92f41;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .button:hover{
+      transition: 0.9s;
+      background-color: #a92f41;
+      color:#fff;
+  }
+
+  .headertitletext {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    
+  }
+
+  .smallertext{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+    
+  }
+
+  .contentarea{
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.formbox{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.headingarea{
+    display: flex;
+    background-color: #a91f2f;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.photosection{
+width: 30%;
+}
+
+.changephoto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.changephoto img{
+    height: 50px;
+}
+
+
+
+.formcontainer{
+    width: 60%;
+    margin: auto;
+
+}
+
+.formgroup{
+    padding-bottom: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 11px 18px;
+    background: #F4F4F4;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+
+.label{
+    color: #000000CC;
+
+}
+
+.formgroup .button {
+    background-color: #a92f41;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+    display: flex;
+    float: right;
+  }
+
+  .contentarea{
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
+
+.formboxs{
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+}
+
+
+
+.headingarea{
+    display: flex;
+    background-color: #a91f2f;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+input[type=text],[type=date], select {
+    width: 100%;
+    padding: 11px 18px;
+    background: #F4F4F4;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+
+
+  .formgroup{
+    padding-bottom: 20px;
+}
+
+.label{
+    color: #000000CC;
+
+}
+
+.formgroup .button {
+    background-color: #a92f41;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+    display: flex;
+    float: right;
+  }
+
+  .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-gap: 20px;
+}
+
+.experience{
+    background-color: #a91f2f;
+    padding: 16px;
+    color: #fff;
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.titleheader{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    }
+    
+    
+    .cv{
+        background-color: #c3c3c3;
+        padding: 18px;
+        border-radius: 7px;
+        cursor: pointer;
+        
+    }
+    .userprofile{
+        background-color: #fff;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .headarea{
+        color: #fff;
+        background-color: #a92f41;
+        padding: 20px;
+    }
+    
+    .profilebody{
+        width: 100%;
+        padding: 10px;
+        margin: 9px;
+        height: auto;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+    }
+    
+    
+    
+    .profiledetails{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        padding: 30px;
+    }
+    
+    .profileimg{
+     
+        height: 190px;
+        width: 190px;
+    }
+    
+    .profileimg img{
+        height: 190px;
+    }
+    
+    .details1{
+    width: 100%;
+    }
+    
+    .details1 p {
+        margin-top: 5px;
+    }
+    
+    .details2 p {
+        margin-top: 5px;
+    }
+    
+    .user_name{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+    
+    
+    .user_jobtitle{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;    
+    }
+    
+    .user_year{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+        
+    }
+    
+    .user_email{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    }
+    
+    .user_phonenumber{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    }
+    
+    
+    .details2{
+    width: 100%;
+    }
+    
+    .edit{
+        padding: 9px;
+        display: flex;
+        justify-content: space-between ;
+    }
+    
+    .edit img{
+        width: 80%;
+    }
+    
+    .profile2{
+        margin: auto;
+        margin-top: 50px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+    }
+    
+    .profilesection1{
+        background-color: #fff;
+        padding: 19px;
+        border-radius: 8px;
+    }
+    
+    
+    .profilesection2{
+        background-color: #fff;
+        padding: 19px;
+        border-radius: 8px;
+    }
+    
+    .borderbottom{
+        margin-top: 8px;
+        border-bottom: 1px solid #A91F2F66;
+    }
+    
+    
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    
+    
+    .personaldetails{
+        margin-top: 10px;
+    }
+    
+    .titleheader{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    }
+    
+    .profile_content{
+        color: #424243D4;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    
+    .cv{
+        background-color: #c3c3c3;
+        padding: 18px;
+        border-radius: 7px;
+        cursor: pointer;
+        
+    }
+    
+    
+ 
+
+
+  @media only screen and (max-width: 999px)  {
+    .formbox{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .experience{
+        width: 60%;
+    }
+
+    
+.photosection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+
+.picbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.changephoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+    
+.formcontainer{
+    width: 90%;
+    margin: auto;
+
+}
+
+}
+@media only screen and (max-width: 996px)  {
+    .profilebody{
+        width: 100%;
+        padding: 10px;
+        margin: 9px;
+        height: auto;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+    }
+
+    .profileimg{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details1  {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .details2  {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+.profiledetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.userprofile{
+    width: 98%;
+}
+
+.profile2{
+    width: 98%;
+
+}
+
+.profilesection2{
+    margin-top: 30px;
+}
+
+  }
+
+
+
+@media only screen and (max-width: 799px)  {
+
+    .contentarea{
+        width: 98%;
+    }
+    .row{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .formboxs{
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+    }
+}
+
+@media only screen and (max-width: 799px)  {
+
+    .experience{
+        width: 100%;
+    }
+}
+
+
+  @media only screen and (max-width: 600px) {
+    .details1 {
+ display: block;
+    }
+    .details2{
+        display: block;
+    }
+
+
+  }
+
+  
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .contain{
+      margin-top: 20px;
+      width: 100%;
+  }
+  .organizationprofile{
+      width: 100%;
+      padding: 30px;
+      margin: auto;
+  }
+}

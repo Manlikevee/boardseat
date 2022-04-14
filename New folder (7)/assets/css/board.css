@@ -1,0 +1,154 @@
+/* Left sidenac styles*/
+.logo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item svg{
+        margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.nav-item :active{
+    stroke: #fff;
+    /* fill: #fff; */
+}
+
+/*First line of header styles*/
+.date-profile,
+.inner-date,
+.img-not{
+    display: flex;
+    justify-content: space-between;
+}
+.inner-date, .img-not{
+    align-items: center;
+}
+.inner-date svg,
+.card svg,
+.job-one img,
+.msg-content img{
+    margin-right: 11px;
+}
+.img-not{
+    margin-left: 9px;
+}
+.name, .jobs{
+    margin-top: 15px;
+}
+.name p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.role-wrapper header small{
+    font-weight: 500;
+}
+.profile-complete p{
+    font-size: 13px;
+}
+.profile-complete span{
+    color: #A91F2F;
+    font-size: 15px;
+}
+
+/*main content styles*/
+.main-content{
+    margin-top: 0;
+    padding-top: 0;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+.card{
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  
+}
+.card-text p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.jobs{
+    /* background-color: green; */
+    height: calc(100vh - 20rem);
+    overflow-y: scroll;
+}
+.job-time{
+    margin: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 0.1em;
+    font-size: 12px;
+    font-weight: bold;
+}
+.job-time span{
+    background-color:#f4f4f4;
+    padding: 0 10px;
+}
+.job-one{
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 7px;
+    background-color: #fff;
+    display: flex;
+    align-items: center; 
+    margin-right: 10px;
+}
+.job-one p{
+    font-size: 16px;
+    color: #181818;
+}
+.job-one small{
+    font-size: 12px;
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+    border-radius: 20px;
+    min-height: 20px;
+}
+
+/*messages*/
+.msg-nav{
+    overflow-y: scroll;
+}
+.msg-content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px #f4f4f4 solid;
+    border-top: 1px #f4f4f4 solid;
+}
+.msg-content p{
+    width: 120%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.msg-content small{
+    color: #181818;
+    opacity: 0.5;
+    /* width: 200%; */
+}
+.msg-header{
+    margin-bottom: 15px;
+}
+
+  

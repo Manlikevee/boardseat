@@ -1,0 +1,202 @@
+.role-wrapper{
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-rows: 5.5rem;
+    grid-template-areas: 
+        "leftside head head"
+        "leftside main main";
+}
+
+
+.main-content{
+    background-color: blueviolet;
+    background-color: #f4f4f4;
+    grid-area: main;
+}
+.role-wrapper > * {
+    width: 100%;
+    margin: auto;
+    /* color: black; */
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    padding: 10px;
+    border-radius: 0.3em;
+}
+body{
+    background-color: #f4f4f4;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+}
+/*Header Style {others come from the board.css style sheet*/
+.jobrole-text{
+    font-weight: bold;
+}
+
+/*search nav styles*/
+.search-fields{
+    background-color: skyblue;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 7px;
+
+}
+
+@media only screen and (max-width: 800px)
+{
+    .search-fields{
+        display: block;
+    }
+
+
+}
+.input-search{
+    display: flex;
+    align-items: center;
+    flex-grow: 0.6;
+}
+.drop-down{
+    display: flex;
+    align-items: center;
+}
+.input-search input{
+    width: 100%;
+    padding: 6px 0;
+    /* border: 1px solid #ebebeb; */
+    border: none;
+}
+select{
+    height: 20px;
+    width:20px;
+    color: #fff;
+    background-color: #424243;
+    border-radius: 50%;
+    border: none;
+}
+input[date]{
+    height: 20px;
+    width:20px;
+    color: #fff;
+    background-color: #424243;
+    border-radius: 50%;
+    border: none;
+}
+
+label{
+    margin-right: 9px;
+    /* margin-left: 5px; */
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+/*Style for cards that display the job role*/
+.role-cards-wrapper{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px 25px;
+
+    padding-right: 15px;
+}
+
+.scrollrapper{
+    margin-top: 10px;
+    height: calc(78vh);
+    /* background-color: blue; */
+    overflow-y: scroll;
+    
+}
+.role-card{
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    font-size: 13.5px;
+}
+.company-location,
+.tag-time,
+.com-loc{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.com-loc img{
+    margin-right: 3px;
+}
+.role-card-bold{
+    font-weight: bold;
+}
+.role-card-text,
+.service-position p:first-child{
+    color: #424243;
+}
+.tag-time p {
+    border-radius: 15px;
+    background-color: #dc9da4;
+    color: #9e1323;
+    padding: 4px 11px;
+}
+.service-position{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.tag-time{
+    margin-top: 15px;
+}
+.icon-text p:nth-child(2){
+    border-radius: 15px;
+    background-color: #dc9da4;
+    color: #9e1323;
+    padding: 4px 11px;
+}
+
+/*Style for submitted-application.html*/
+.application-status p{
+    display: inline-block;
+    margin-right: 10px;
+}
+.application-status p:first-child{
+    font-weight: 600;
+    color: #a91f2f;
+}
+.application-status p:nth-child(2){
+    color: #424243
+}
+
+/*Style for saved-application.html*/
+.application-status-saved p{
+    display: inline-block;
+    margin-right: 10px;
+}
+.application-status-saved p:first-child{
+    color: #424243;
+}
+.application-status-saved p:nth-child(2){
+    font-weight: 600;
+    color: #a91f2f;
+}
+.recruit{
+    color: #08A534;
+}
+.not-recruit{
+    color: #A91F2F;
+}
+
+.company-location img{
+    width: 35px;
+    height: 35px;
+}
+
+.com-loc img{
+    width: auto;
+    height: 21px;
+    margin-bottom: 9px;
+}
+

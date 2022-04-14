@@ -1,0 +1,294 @@
+.role-wrapper{
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-rows: 5.5rem;
+}
+
+
+.expimg img{
+    width: 55px;
+    height: 55px;
+}
+
+.side-nav{
+    background-color: palevioletred;
+    background-color: #fff;
+}
+.main-content{
+    background-color: blueviolet;
+    background-color: #f4f4f4;
+    width: 100%;
+} 
+.role-wrapper > * {
+    /* color: black; */
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    padding: 1rem;
+    border-radius: 0.3em;
+}
+body{
+    background-color: #f4f4f4;
+
+}
+/*Header Style {others come from the board.css style sheet*/
+.jobrole-text{
+    font-weight: bold;
+}
+
+/*search nav styles*/
+.search-fields{
+    background-color: skyblue;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 7px;
+
+}
+.input-search{
+    display: flex;
+    align-items: center;
+    flex-grow: 0.5;
+}
+.drop-down{
+    display: flex;
+    align-items: center;
+}
+.input-search input{
+    width: 100%;
+    padding: 6px 0;
+    /* border: 1px solid #ebebeb; */
+    border: none;
+}
+select{
+    height: 20px;
+    width:20px;
+    color: #fff;
+    background-color: #424243;
+    border-radius: 50%;
+    border: none;
+}
+label{
+    margin-right: 9px;
+    /* margin-left: 5px; */
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+/*Style for cards that display the job role*/
+.role-cards-wrapper{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px !important;
+    grid-auto-rows: 320px !important;
+    grid-gap: 20px 25px;
+    height: calc(90vh - 3.5rem);
+    /* background-color: blue; */
+    overflow-y: scroll;
+    padding-right: 15px;
+}
+.role-card{
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    font-size: 13.5px;
+}
+.company-location,
+.tag-time,
+.com-loc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.com-loc img{
+    margin-right: 3px;
+}
+.role-card-bold{
+    font-weight: bold;
+}
+.role-card-text,
+.service-position p:first-child{
+    color: #424243;
+}
+.tag-time p {
+    border-radius: 15px;
+    background-color: #dc9da4;
+    color: #9e1323;
+    padding: 4px 11px;
+}
+.service-position{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.tag-time{
+    margin-top: 15px;
+}
+.service-position p:first-child{
+    font-size: 12px;
+}
+
+/*new addition to role expansion*/
+.roles-expand{
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr;
+}
+.card-expand{
+    margin-top: 20px;
+    margin-left: 35px;
+    /* background-color: rebeccapurple; */
+    background: rgba(255, 255, 255, 0.4);
+}
+.card-expand-content{
+    display: flex;
+    padding: 10px 15px 30px 15px;
+    background-color: #fff;
+}
+.card-expand-info p:first-child{
+    color: #424243;
+    /* font-size: 15px; */
+}
+.card-expand-info{
+    margin-left: 15px;
+    flex-grow: 2;
+}
+/* .card-expand-button{
+    align-self: flex-end;
+} */
+.card-expand-button button{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: -20px;
+    margin-left: 10px;
+    /* font-weight: bold; */
+}
+.card-expand-button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-expand-button-wrapper svg{
+    margin-left: auto;
+}
+.card-expand-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.icon-text{
+    display: flex;
+    align-items: center;
+}
+.icon-text p{
+    margin-right: 10px !important;
+    font-size: 13px;
+    color: #424243;
+}
+.card-expand-button button:first-child{
+    background-color: #fff;
+    color: #A91F2F;
+    border: 1px solid #c4c4c4;
+}
+.card-expand-button button:nth-child(2){
+    background: #A91F2F;
+    color: #fff;
+}
+/*card expand body text*/
+.card-expand-body{
+    padding: 10px 15px;
+    color: #424243;
+    line-height: 1.45;
+/* background-color: yellow;     */
+    height: calc(90vh - 9rem);
+    font-size: 15.5px;
+    overflow-y: scroll;
+}
+ul{
+list-style-position: inside;
+}.card-expand-body h3{
+    margin: 20px 0;
+}
+.card-expand-body h4{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1114px) {
+    .role-cards-wrapper{
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .msg-nav {
+        display: none;
+    }
+    .side-nav {
+      display: none;
+    }
+    
+.card-expand{
+    margin-left: 0 ;
+}
+.card-expand-info{
+    margin-left: 19px;
+}
+.card-expand-body{
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+
+.card-expand-button{
+    margin-top: 10px;
+}
+
+.card-expand-content{
+    display: block;
+}
+.roles-expand{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.role-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.search-fields{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 7px;
+}
+
+
+
+.drop-down{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.input-search{
+    width: 100%;
+}
+
+
+
+}
+
+
+
+
+
+

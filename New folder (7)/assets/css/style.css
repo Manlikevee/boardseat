@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.backbtn{
+    margin-right: 10px;
+}
+
+.signup_box{
+    display: flex;
+}
+
+.imagebox{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1574473573325-d2d221ec010e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxcontent{
+    padding: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.signup_text{
+    margin-bottom: 10px;
+}
+
+.signupcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+.cont{
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color:rgba(66, 66, 67, 1);
+}
+
+.signupcard1{
+    border-radius: 10px;
+   background-color: #A91F2F; 
+   box-shadow: 0px 0px 4px 0px #949494;
+   margin-bottom: 30px;
+
+}
+
+.headingtxt{
+    padding-bottom: 20px;
+}
+
+.card1{
+    display: flex;
+    margin: 18px;
+    color: #FFFFFF;
+}
+
+.card1 .textimg{
+    width: 20%;
+    align-items: center;
+    display: flex;
+}
+
+.card1 .textcontent{
+    width: 70%;
+}
+
+.card1 .arrow{
+    width: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card1 .textcontent .cardheadertext{
+font-family: Roboto;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+
+.card1 .textcontent .cardbodytext{
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+.signupcard2{
+    border-radius: 10px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px #949494;
+    margin-bottom: 20px;
+    transition: 0.9ms;
+   
+ }
+
+ .signupcard2:hover{
+    border-radius: 10px;
+    display: flex;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    color: #000;
+    box-shadow: 0px 0px 4px 0px #949494;
+    margin-bottom: 20px;
+
+    transition: 0.9ms;
+
+ }
+ 
+
+.card2{
+    display: flex;
+    margin: 18px;
+}
+
+.card2 .textimg{
+    width: 20%;
+    align-items: center;
+    display: flex;
+}
+
+.textimg img{
+    width: 45px;
+    height: 45px;
+}
+
+.card2 .textcontent{
+    width: 70%;
+}
+
+.card2 .arrow{
+    width: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.arrow img{
+    Width:10.67px;
+    Height: 21.33px;
+}
+
+.card2 .textcontent .cardheadertext{
+font-family: Roboto;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.card2 .textcontent .cardbodytext{
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .signup_box{
+        display: block;
+    }
+
+    .imagebox{
+        display: none;
+    }
+    .boxcontent{
+        margin-top: 50px;
+       min-height: auto;
+       width: 100%;
+       padding: 35px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+    }
+
+    .signup_text{
+        margin-bottom: 65px;
+    }
+
+    .signupcard1{
+        margin-bottom: 65px;
+    }
+
+    .signupcard2{
+        margin-bottom: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 440px){
+    .signup_text{
+        margin-bottom: 35px;
+    }
+    .boxcontent{
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .signupcard1{
+        margin-bottom: 45px;
+    }
+
+    .signupcard2{
+        margin-bottom: 45px;
+    }
+  }
+
+
+
+
+

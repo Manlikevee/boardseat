@@ -1,0 +1,130 @@
+.contentarea{
+    width: 98%;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #000;
+ 
+}
+
+.formbox{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background-color: #fff;
+   
+}
+
+.headingarea{
+    display: flex;
+    background-color: #a91f2f;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.photosection{
+width: 30%;
+}
+
+.changephoto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.changephoto img{
+    height: 50px;
+}
+
+
+
+.formcontainer{
+    width: 60%;
+    margin: auto;
+
+}
+
+.formgroup{
+    padding-bottom: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 11px 18px;
+    background: #F4F4F4;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+
+.label{
+    color: #000000CC;
+
+}
+
+.formgroup .button {
+    background-color: #a92f41;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 14px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+    display: flex;
+    float: right;
+  }
+
+
+
+  @media only screen and (max-width: 999px)  {
+    .formbox{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .experience{
+        width: 60%;
+    }
+
+    
+.photosection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+
+.picbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.changephoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+    
+.formcontainer{
+    width: 90%;
+    margin: auto;
+
+}
+
+}
