@@ -238,14 +238,28 @@ table {
     text-align: center;
     color: #424243;
   }
+  .s{
+color: #424243;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+  }
 
+  th p {
+      margin-top: 10px;
+      margin-bottom: -10px;
+  }
   .tbstyle span{
       color: #a92f41;
   }
   
   th, td {
     text-align: center !important;
-    padding: 20px !important;
+    padding: 23px !important;
   }
 
   td {
@@ -260,6 +274,7 @@ table {
   
   td:nth-child(even) {
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 
   }
 

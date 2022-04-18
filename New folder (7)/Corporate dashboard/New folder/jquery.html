@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+
+</head>
+
+<body>
+
+
+  <div class="signup">
+    <div class="signup-header">Sustainable Living</div>
+    <span class="closebtn" onclick="setSignup('hide');this.parentElement.style.display='none';">XXX</span>
+    <div class="signup-container">
+      <p>Get new articles related to <em>sustainability</em> and <em>eco-friendly home decor</em> direct to your inbox. We respect your privacy.</p>
+      <form action="https://reclaimdesign.us9.list-manage.com/subscribe/post?u=0c1d87de694b90628655f4ab9&amp;id=bab84d57de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Please Enter Your Email Address" required autocomplete="email">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0c1d87de694b90628655f4ab9_bab84d57de" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+    function setSignup(val) {
+      localStorage.setItem("popState", val);
+    }
+
+    function getSignup() {
+      if (localStorage.getItem("popState") == 'hide') {
+        //$(".signup").hide();
+        document.querySelector('.signup').style.display = 'none';
+      } else if (localStorage.getItem("popState") != 'hide') {
+        document.querySelector('.signup').style.display = 'block';
+      }
+    }
+    window.addEventListener("load", getSignup);
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

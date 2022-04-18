@@ -25,11 +25,9 @@
   }
   .card {
     padding: 30px 20px;
-    background-color: #fff;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    border: 1px solid #999;
   }
   .card-text{
       margin-left: 30px;
@@ -229,10 +227,10 @@
   }
   /*messages*/
 .msg-nav {
+  background: rgba(252, 253, 253, 1);
     margin-top: 20px;
     overflow-y: scroll;
-    height: 100vh;
-    border: 1px solid #999;
+    height: 83vh;
     border-radius: 7px;
     padding: 7px;
 
@@ -245,9 +243,11 @@
     border-top: 1px #f4f4f4 solid;
   }
   .msg-content p {
-    width: 120%;
+    width: 100%;
     font-size: 14px;
     font-weight: bold;
+    color: rgba(66, 66, 67, 1);
+
   }
   .msg-content small {
     color: #181818;
@@ -448,18 +448,12 @@
     width: 96%;
     margin: auto;
     /* background-color: blueviolet; */
-    grid-area: main;
   }
   .wrapper > * {
     padding: 1rem;
     border-radius: 0.3em;
   }
-  body {
-    background-color: #fcfcfc;
-    font-size: 15px;
-    line-height: 1.2;
-  }
-  
+
   /* Left sidenac styles*/
   .logo {
     text-align: center;
@@ -470,6 +464,10 @@
     text-decoration: none;
     color: #424243;
   }
+  .nav_active:on {
+ 
+}
+
   .nav-item {
     display: flex;
     align-items: center;
@@ -478,6 +476,13 @@
     margin-right: 20px;
   }
   .side-links a {
+    color: rgba(66, 66, 67, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    
     margin: 30px 0;
   }
   .side-links {
@@ -486,12 +491,14 @@
   .side-links a:focus {
     color: white;
     background-color: #a91f2f;
-    padding: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
   }
   
   .all-activities {
     margin-top: 15px;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 17rem);
     overflow-y: scroll;
     width: 100%;
   }
@@ -701,18 +708,23 @@
   }
   .card {
     padding: 30px 20px;
-    background-color: #fff;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    border: 1px solid #999;
+    background: rgba(255, 255, 255, 1);
+
   }
 
 
 
   .card-text p {
+   color: rgba(66, 66, 67, 0.5);
     font-size: 30px;
     font-weight: bold;
+  }
+
+  .card-text small{
+    color: rgba(66, 66, 67, 0.5);
   }
   
   /*messages*/
@@ -764,10 +776,11 @@
     padding: 18px;
     margin: 10px 0;
     border-radius: 7px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 1);
     align-items: center; 
     margin-right: 10px;
-    border: 1px solid #999;
+    box-shadow: 0px 20px 60px 0px rgba(241, 244, 248, 0.5);
+
   }
   .job-one p{
     font-size: 16px;
@@ -797,22 +810,24 @@
   }
   
   .jobdesc{
-
+   color: #424243;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 17px;
   }
   
   .desc_text{
-  letter-spacing: 0.05em;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 300;
-  color: #424243;
+font-size: 13px;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: 0.05em;
+text-align: left;
+    color: rgba(66, 66, 67, 1) !important;
+
   
   }
   

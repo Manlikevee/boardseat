@@ -6,7 +6,7 @@
 
 
 .expimg img{
-    width: 55px;
+    width: 90px;
     height: 55px;
 }
 
@@ -83,8 +83,8 @@ input::placeholder{
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 320px !important;
-    grid-auto-rows: 320px !important;
+    /* grid-template-rows: 320px !important;
+    grid-auto-rows: 320px !important; */
     grid-gap: 20px 25px;
     height: calc(90vh - 3.5rem);
     /* background-color: blue; */
@@ -108,35 +108,17 @@ input::placeholder{
 .com-loc img{
     margin-right: 3px;
 }
-.role-card-bold{
-    font-weight: bold;
-}
-.role-card-text,
-.service-position p:first-child{
-    color: #424243;
-}
-.tag-time p {
-    border-radius: 15px;
-    background-color: #dc9da4;
-    color: #9e1323;
-    padding: 4px 11px;
-}
+
 .service-position{
     margin-top: 25px;
     margin-bottom: 15px;
     line-height: 1.5;
 }
-.tag-time{
-    margin-top: 15px;
-}
-.service-position p:first-child{
-    font-size: 12px;
-}
 
 /*new addition to role expansion*/
-.roles-expand{
+.roles-expand {
     display: grid;
-    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-columns: 1.5fr 3.1fr;
 }
 .card-expand{
     margin-top: 20px;
@@ -149,7 +131,15 @@ input::placeholder{
     padding: 10px 15px 30px 15px;
     background-color: #fff;
 }
+
 .card-expand-info p:first-child{
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
     color: #424243;
     /* font-size: 15px; */
 }
@@ -164,11 +154,20 @@ input::placeholder{
     padding: 10px 18px;
     border: none;
     border-radius: 8px;
-    margin-bottom: -20px;
+
     margin-left: 10px;
     /* font-weight: bold; */
 }
+
+.card-expand-button{
+    margin-bottom: -20px;
+}
+
+.card-expand-button img{
+    margin-bottom: -20px;
+}
 .card-expand-button-wrapper{
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -190,15 +189,16 @@ input::placeholder{
     font-size: 13px;
     color: #424243;
 }
-.card-expand-button button:first-child{
+.card-expand-button button{
+    background: #A91F2F;
+    color: #fff;
+
+}
+/* .card-expand-button button:nth-child(2){
     background-color: #fff;
     color: #A91F2F;
     border: 1px solid #c4c4c4;
-}
-.card-expand-button button:nth-child(2){
-    background: #A91F2F;
-    color: #fff;
-}
+} */
 /*card expand body text*/
 .card-expand-body{
     padding: 10px 15px;
@@ -208,6 +208,13 @@ input::placeholder{
     height: calc(90vh - 9rem);
     font-size: 15.5px;
     overflow-y: scroll;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
 }
 ul{
 list-style-position: inside;

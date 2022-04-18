@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="layout.css">
+        <!-- <link rel="stylesheet" href="assets/css/styles.css">
+      
+        <link rel="stylesheet" href="assets/css/board.css"> -->
+        <!-- <link rel="stylesheet" href="assets/css/role.css"> -->
+        <link rel="stylesheet" href="role.css">
+        <link rel="stylesheet" href="assets/css/roleextension.css">
+
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <div class="wrap">
+
+        <!--========== NAV ==========-->
+        <div class="side-nav">
+            <div class="logo"><img src="https://boardlanding.netlify.app/img/BoardSeats%20Logo%201%201.svg" alt=""></div>
+            <div class="side-links">
+                <a class="nav-item nav_active" href="#">
+                    <svg width="25" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="dash"
+                            d="M1 10h6c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v8c0 .55.45 1 1 1Zm0 8h6c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1Zm10 0h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1ZM10 1v4c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1Z"
+                            fill="#424243" />
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a class="nav-item" href="#">
+                    <svg class="test" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35" stroke="#424243"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Post a role</span>
+                </a>
+                <a class="nav-item" href="#">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#424243"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Manage Applications</span>
+                </a>
+                <a class="nav-item" href="#">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z" stroke="#424243"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#424243" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Inbox</span>
+                </a>
+                <a class="nav-item" href="#">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.566.566 0 0 0-.18-.03c-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46a.5.5 0 0 0 .61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65Zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74 0-.2.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13ZM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4Zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Z"
+                            fill="#424243" />
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a class="nav-item" href="#">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5Zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14Z"
+                            fill="#424243" />
+                    </svg>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+       <section class="mymain">
+            <div class="role-wrapper">
+
+                <div class="main-content">
+                    <header>
+                        <div class="date-profile">
+                            <small></small>
+                            <div class="inner-date">
+                                <svg width="42" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="21" cy="20.973" rx="20.415" ry="20" fill="#fff" />
+                                    <path
+                                        d="m30.978 24.68-2.126-2.23v-2.954a8.483 8.483 0 0 0-2.031-5.525c-1.306-1.514-3.1-2.467-5.036-2.674V9.608h-1.57v1.69c-1.936.206-3.73 1.159-5.035 2.673a8.483 8.483 0 0 0-2.032 5.524v2.955l-2.125 2.23a.845.845 0 0 0-.23.583v2.472c0 .218.082.428.23.582a.767.767 0 0 0 .555.242h5.496v.64a4.373 4.373 0 0 0 .986 2.85c.652.791 1.56 1.301 2.548 1.433a3.757 3.757 0 0 0 1.618-.187c.52-.18 1-.472 1.407-.858.406-.387.732-.858.954-1.384a4.297 4.297 0 0 0 .34-1.67v-.824h5.496a.767.767 0 0 0 .555-.242.845.845 0 0 0 .23-.582v-2.472a.845.845 0 0 0-.23-.583Zm-7.622 4.703c0 .655-.248 1.284-.69 1.747a2.3 2.3 0 0 1-1.666.724c-.625 0-1.224-.26-1.666-.724a2.535 2.535 0 0 1-.69-1.747v-.824h4.712v.823Zm6.281-2.472H12.363v-1.307l2.126-2.23a.845.845 0 0 0 .23-.583v-3.296c0-1.748.661-3.424 1.84-4.66 1.177-1.236 2.775-1.93 4.441-1.93s3.264.694 4.442 1.93c1.178 1.236 1.84 2.912 1.84 4.66v3.296c0 .219.083.428.23.583l2.125 2.23v1.307Z"
+                                        fill="#424243" />
+                                    <ellipse cx="23.435" cy="11.307" rx="2.435" ry="2.862" fill="#A91F2F" />
+                                </svg>
+                                <div class="profile-complete">
+                                    <p>D.KARGAEV</p>
+                                    <p>Profile Completeness <span>32%</span></p>
+                                </div>
+                                <div class="img-not">
+                                    <img src="assets/images/img-not.png" alt="">
+                                    <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.815 12.973a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM13.815 5.973a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM13.815 19.973a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"
+                                            stroke="#424243" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+        
+                        
+                        </div>
+                        <div class="name">
+                            <p>Job Roles</p>
+                   
+                        </div>
+                    </header>
+
+              <div class="search-fields">
+                <div class="input-search">
+                    <input type="text" placeholder="Search roles">
+                    <svg width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x=".846" y=".299" width="32" height="32" rx="4" fill="url(#a)"/>
+                        <path d="M16.18 20.966a5.333 5.333 0 1 0 0-10.667 5.333 5.333 0 0 0 0 10.667ZM22.846 22.3l-2.9-2.9" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <linearGradient id="a" x1="16.846" y1=".299" x2="16.846" y2="32.299" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#A91F2F"/>
+                            <stop offset="1" stop-color="#A91F2F"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="drop-down"><label for="">Role match</label><select name="" id=""><option value="">Hello</option></select></div>
+                <div class="drop-down"><label for="">Industry</label><select name="" id=""><option value="">Hello</option></select></div>
+                <div class="drop-down"><label for="">Date posted</label><select name="" id=""><option value="">Hello</option></select></div>
+                <div class="drop-down"><label for="">Role type</label><select name="" id=""><option value="">Hello</option></select></div>
+                <div class="drop-down"><label for="">Country</label><select name="" id=""><option value="">Hello</option></select></div>
+                <div class="drop-down"><label for="">City</label><select name="" id=""><option value="">Hello</option></select></div>
+            </div>
+
+
+
+                    <div class="roles-expand">
+                        <div class="role-cards-wrapper">
+
+       
+                            <div class="role-card">
+                                <div class="company-location">
+                                    <img src="logos_linkedin.svg" alt="">
+                                    <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                   <div class="localdiv">
+                                    <div class="com-loc">
+                                        <img src="img/location.svg" alt="">
+                                        <small>Abuja, Nigeria</small>
+                                    </div>
+                                    <div class="tag-time" style="margin-top: 5px">
+                                        <p style="background: rgba(169, 31, 47, 0.2);
+                                        ">Fulltime</p>
+                                    </div>
+                                   </div> 
+                                </div>
+                                <div class="service-position">
+                                <p>Financial Services</p>
+                                <p class="role-card-bold">Risk Consulting Director</p>
+                                </div>
+                                <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                                <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                                    </svg></span>  This Role Matches Your Profile</div>
+                                    <div class="tag-time">
+                                        <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                                        
+                                            <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                                </svg>
+                                        </span>
+                                        <small>2 mins ago</small>
+                                    </div>
+                            </div>
+
+                                  
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+
+                      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>      
+                <div class="role-card">
+                    <div class="company-location">
+                        <img src="logos_linkedin.svg" alt="">
+                        <!-- <small><span></span> Abuja, Nigeria</small> -->
+                       <div class="localdiv">
+                        <div class="com-loc">
+                            <img src="img/location.svg" alt="">
+                            <small>Abuja, Nigeria</small>
+                        </div>
+                        <div class="tag-time" style="margin-top: 5px">
+                            <p style="background: rgba(169, 31, 47, 0.2);
+                            ">Fulltime</p>
+                        </div>
+                       </div> 
+                    </div>
+                    <div class="service-position">
+                    <p>Financial Services</p>
+                    <p class="role-card-bold">Risk Consulting Director</p>
+                    </div>
+                    <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our Lorem ipsum dolor sit amet.  </p>
+                    <div class="match"><span><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.36609 1.71954C4.50046 1.71954 1.36609 4.85392 1.36609 8.71954C1.36609 12.5852 4.50046 15.7195 8.36609 15.7195C12.2317 15.7195 15.3661 12.5852 15.3661 8.71954C15.3661 4.85392 12.2317 1.71954 8.36609 1.71954ZM11.3895 6.43361L8.0989 10.9961C8.05291 11.0603 7.99228 11.1126 7.92204 11.1487C7.85179 11.1848 7.77396 11.2036 7.69499 11.2036C7.61603 11.2036 7.5382 11.1848 7.46795 11.1487C7.39771 11.1126 7.33708 11.0603 7.29109 10.9961L5.34265 8.29611C5.28328 8.21329 5.34265 8.09767 5.44421 8.09767H6.17703C6.3364 8.09767 6.48796 8.17423 6.58171 8.30548L7.69421 9.84923L10.1505 6.44298C10.2442 6.31329 10.3942 6.23517 10.5552 6.23517H11.288C11.3895 6.23517 11.4489 6.35079 11.3895 6.43361Z" fill="#08A534"/>
+                        </svg></span>  This Role Matches Your Profile</div>
+                        <div class="tag-time">
+                            <span style="color:rgba(169, 31, 47, 1); display: flex; gap: 5px;" >Save role
+                            
+                                <svg width="15" height="17" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.92166 14.4257C8.68693 14.4258 8.46165 14.3332 8.29499 14.1679L5.3661 11.2345L2.45944 14.1323C2.33648 14.2637 2.17652 14.3547 2.00072 14.3933C1.82492 14.4318 1.64156 14.4161 1.47489 14.3482C1.30822 14.2803 1.16609 14.1634 1.06731 14.0129C0.968523 13.8625 0.917734 13.6856 0.921659 13.5057V1.09232C0.921659 0.856571 1.01531 0.630479 1.18201 0.46378C1.34871 0.297081 1.5748 0.20343 1.81055 0.20343H8.92166C9.15741 0.20343 9.3835 0.297081 9.5502 0.46378C9.7169 0.630479 9.81055 0.856571 9.81055 1.09232V13.5368C9.81055 13.7725 9.7169 13.9986 9.5502 14.1653C9.3835 14.332 9.15741 14.4257 8.92166 14.4257ZM8.92166 13.5368V1.09232H1.81055V13.5057L5.3661 9.98121L8.92166 13.5368Z" fill="#BD0B20"/>
+                                    </svg>
+                            </span>
+                            <small>2 mins ago</small>
+                        </div>
+                </div>
+                            
+                            
+                        </div>
+                        <div class="card-expand">
+                            <div class="card-expand-content">
+                                <div class="expimg">
+                                    <img src="logos_linkedin.svg" alt="">                                </div>
+                                <div class="card-expand-info">
+                                    <p>Financial Services</p>
+                                    <p class="role-card-bold">Risk Consulting Director</p>
+                                    <div class="card-expand-icons">
+                                        <img src="img/location.svg" alt="">
+                                        <div class="icon-text">
+                                        <p>Abuja, Nigeria</p>
+                                        <p>Fulltime</p>
+                                        <p>2 mins ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-expand-button-wrapper">
+                                  <!-- <svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.044.299a.625.625 0 0 1 1.052.456V3.49a9.069 9.069 0 0 1 3.508.788c2.201.998 4.463 3.187 4.988 7.78a.625.625 0 0 1-1.036.538c-2.168-1.927-4.199-2.757-5.668-3.11a8.856 8.856 0 0 0-1.792-.25v2.768a.625.625 0 0 1-1.052.456l-6-5.625a.625.625 0 0 1 0-.912l6-5.625Zm.5 4.452h-.012a.625.625 0 0 1-.686-.621V2.197L2.386 6.38l4.46 4.182V8.63a.62.62 0 0 1 .548-.62h.003l.005-.001.014-.002a6.752 6.752 0 0 1 .772-.018c.672.028 1.339.123 1.992.283 1.34.322 3.05.986 4.889 2.327-.743-3.04-2.432-4.48-3.98-5.181a7.825 7.825 0 0 0-3.546-.667ZM16.72.88a3.125 3.125 0 0 1 3.125 3.125v10.75a3.125 3.125 0 0 1-3.125 3.125H5.971a3.125 3.125 0 0 1-3.125-3.125V13.63a.625.625 0 0 1 1.25 0v1.125a1.875 1.875 0 0 0 1.875 1.875h10.75a1.875 1.875 0 0 0 1.875-1.875V4.005a1.875 1.875 0 0 0-1.875-1.875h-4.125a.625.625 0 0 1 0-1.25h4.125Z" fill="#424243"/></svg> -->
+                                    <div class="card-expand-button">
+                                        <img src="Frame 1573.svg" alt="">
+                                        <img src="Frame 1575.svg" alt="">
+                                    
+                                        <!-- <button>Save</button> -->
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-expand-body">
+                                <p>
+                                    Our vision is to become the leading platform that allows people in  Risk Consulting Director to engage in social commerce in a safe and convenient way. Our mission is to empower people in Africa by giving them the opportunity to participate in e-commerce and fulfil every transaction with everyone, anywhere in thewe will implement these health checkers that Admin can administer to their staff and record results - this measures how the staffs level of activity influences their health... we will prompt them to administer them 
+                                </p>
+                                <h3>Job Description</h3>
+                                <p>
+                                    We are looking for a user-interface/user-experience Risk Consulting Director able to understand our business requirements and any technical limitations, as well as be responsible for conceiving nto sitemaps, user flows, customerwe will implement these health checkers that Admin can administer to their staff and record results - this measures how the staffs level of activity influences their health... we will prompt them to administer them regularly  overall functionality of the product, and in order to ensure a great user experience, iterate upon it in accordance with user-testing.
+                                </p>
+                                <h4>Responsiblities</h4>
+                                <ul>
+                                    <li>Translate concepts into user flows, Risk Consulting Director that lead to intuitive </li>
+                                    <li>Facilitate the client’s product vision by researching, conceiving, sketching, prototyping and</li>
+                                    <li>Design and deliver Risk Consulting Directors, and mockups Risk Consulting Director wide</li>
+                                    <li>Identify design problems and devise elegant solutions.</li>
+                                    <li>Make strategic design andRisk Consulting Director decisions related to core, and new, functions and </li>
+                                    <li>Take a user-centered</li>
+                                </ul>
+                                <ul>
+                                    <li>Translate concepts into user flows, Risk Consulting Director that lead to intuitive </li>
+                                    <li>Facilitate the client’s product vision by researching, conceiving, sketching, prototyping and</li>
+                                    <li>Design and deliver Risk Consulting Directors, and mockups Risk Consulting Director wide</li>
+                                    <li>Identify design problems and devise elegant solutions.</li>
+                                    <li>Make strategic design andRisk Consulting Director decisions related to core, and new, functions and </li>
+                                    <li>Take a user-centered</li>
+                                </ul>
+                                <ul>
+                                    <li>Translate concepts into user flows, Risk Consulting Director that lead to intuitive </li>
+                                    <li>Facilitate the client’s product vision by researching, conceiving, sketching, prototyping and</li>
+                                    <li>Design and deliver Risk Consulting Directors, and mockups Risk Consulting Director wide</li>
+                                    <li>Identify design problems and devise elegant solutions.</li>
+                                    <li>Make strategic design andRisk Consulting Director decisions related to core, and new, functions and </li>
+                                    <li>Take a user-centered</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        </div>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.signup {
+    bottom: 2%;
+    display: none;
+    margin-right: -15px !important;
+    max-width: 280px;
+    position: fixed;
+    right: 2%;  
+    z-index: 9999;  
+    }
+    
+    .signup-header {
+        background: #539c22;
+        border: 1px solid #6db240;
+        border-radius: 10px 10px 0 0;
+        color: #fff;
+        font-family: "Carrois Gothic",sans-serif;
+        font-size: 18px;
+        padding: 25px 15px;
+        text-transform: uppercase;
+        -moz-border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+    }
+    
+    .signup-container {
+        background-color: #6db240;
+        border-radius: 0 0 10px 10px;
+        color: #fff;
+        padding: 15px;
+        -moz-border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+    }
+    
+    .closebtn {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute; 
+    right: 15px;
+    top: 5px;   
+    }
+    
+    .closebtn:hover {
+    color: #6db240;
+    }
+    
+    .signup-container .button {
+        background-color: #539c22;
+        border: none;
+        border-radius: 5px;
+        color: #fff!important;
+        cursor: pointer;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+        transition: background-color .3s ease-in-out;
+        -moz-transition: background-color .3s ease-in-out;
+        -o-transition: background-color .3s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: background-color .3s ease-in-out;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        width: 100%!important;
+    }
+    
+    .signup-container .button:hover {
+    opacity: 0.7;
+    }
+    
+    .signup-container .mc-field-group input {
+    display: block;
+    padding: 8px 0;
+    text-indent: 2%;
+    width: 100%;
+    }
+    
+    .signup-container input {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    cursor: auto;
+    font-size: 13px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    }

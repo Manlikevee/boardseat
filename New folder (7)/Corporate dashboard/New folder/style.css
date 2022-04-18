@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page_name{
+font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: left;
+color:  #333333;
+padding: 30px;
+}
+
+.plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 84%;
+    margin: auto;
+    padding-bottom: 90px;
+
+}
+
+.plan1{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background: #F4F4F4;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 22px;
+    border-radius: 9px;
+}
+
+.p_title{
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: center;
+color: #424243;
+width: 100%;
+margin: auto;
+}
+
+.under_line{
+    border-bottom: 2px solid #A91F2F;
+    width: 50%;
+    margin: auto;
+    margin-top: 9px;
+    margin-bottom: 30px;
+}
+
+.feature{
+    text-align: center;
+}
+
+.price_list{
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0px;
+text-align: center;
+}
+
+.price_list small{
+    color: #424243;
+    font-size: 22px;
+    margin-left: 3px;
+}
+
+.plandetail_text{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #424243;  
+}
+
+.getstarted{
+    margin-top: 30px;
+}
+
+.getstarted button{
+    background: #A91F2F;
+    border-radius: 10px;
+    padding: 17px;
+    color: #fff;
+    border: none;
+
+}
+
+.plandetails{
+    margin-top: 18px;
+    
+}
+
+.plandetails_text{
+    text-align: center;
+}
+
+.plandetails ul{
+    padding-left: 30px;
+}
+
+.plandetails ul li{
+   
+   padding: 5px;
+   font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+
+  
+}
+
+.getstarted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .plans {
+      display: block;
+      width: 90%;
+    }
+
+    .plan1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .plandetails ul{
+        padding-left: 0;
+    }
+  }
