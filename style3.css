@@ -1071,6 +1071,8 @@ color: rgba(66, 66, 67, 1);
     margin: auto;
     padding: 40px;
     gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .gstartedimg{
@@ -1222,7 +1224,7 @@ color: rgba(66, 66, 67, 1);
     align-items: center;
 }
 .offer_section{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 
