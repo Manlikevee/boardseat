@@ -1893,6 +1893,10 @@ margin-top: 10px;
         display: block !important;
     }
 
+    .allcontent{
+        padding: 15px;
+    }
+
 }
 
 .hov:hover{
