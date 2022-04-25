@@ -50,12 +50,20 @@ body{
     display: flex;
     flex-direction: column;
 }
+.navv{
+    display: none;
+}
+
 
 @media only screen and (max-width: 800px)
 {
     .search-fields{
         display: block;
     }
+    .wrap{
+        display: block !important;
+    }
+
 
 
 }

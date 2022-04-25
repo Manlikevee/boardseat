@@ -81,3 +81,18 @@ img {
   width: 100%;
   height: 100vh;
 }
+
+@media screen and (max-width: 1124px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 100%;
+}
+.side-nav{
+  display: none;
+}
+.navv{
+  display: block !important;
+}
+}
+
+@media (max-width:2070px){.navbar-expand-srset>.container,.navbar-expand-srset>.container-fluid{padding-right:0;padding-left:0}}@media (min-width:1071px){.navbar-expand-srset{-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-srset .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-srset .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-srset .navbar-nav .dropdown-menu-right{right:0;left:auto}.navbar-expand-srset .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-srset>.container,.navbar-expand-srset>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-srset .navbar-collapse{display:-ms-flexbox!important;display:flex!important}.navbar-expand-srset .navbar-toggler{display:none}.navbar{flex-wrap:nowrap!important;-ms-flex-wrap:nowrap!important;}}
