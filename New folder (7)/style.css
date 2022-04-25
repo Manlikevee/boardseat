@@ -968,6 +968,19 @@ text-align: left;
       margin: 6px;
   }
   }
+
+  .freetrial span{
+font-size: 15px;
+font-style: italic;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(220, 82, 98, 1);
+margin-right: 5px;
+  }
+
+  
   
   
   
