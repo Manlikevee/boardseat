@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="assets/css/roleextension.css">
+
+
+
+        <title>Responsive</title>
+    </head>
+    <body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+    border-radius: 20px;
+    min-height: 20px;
+  }
+
+  /*main content styles*/
+  .main-content {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  
+  
+  .job-one{
+    padding: 18px;
+    margin: 10px 0;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 1);
+    align-items: center; 
+    margin-right: 10px;
+    box-shadow: 0px 20px 60px 0px rgba(241, 244, 248, 0.5);
+
+  }
+  .job-one p{
+    font-size: 16px;
+    color: #181818;
+  }
+  .job-one small{
+    font-size: 12px;
+  }
+  
+  
+  
+  .joblogo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .jobtitle{
+ 
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+  }
+  
+  .jobdesc{
+   color: #424243;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 17px;
+  }
+  
+  .desc_text{
+font-size: 13px;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: 0.05em;
+text-align: left;
+    color: rgba(66, 66, 67, 1) !important;
+
+  
+  }
+  
+  
+  
+  .tag-time p {
+    border-radius: 5px;
+    background-color: #f1d5d8;
+    color: #A91F2F;
+    padding: 4px 11px;
+    margin-right:6px;
+    font-size: 14px;
+  }
+  
+  .tag-time{
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  
+  .tag-time{
+    display: flex;
+    align-items: center;
+    
+   
+  }
+  @media screen and (max-width: 1142px){
+    .all-activities{
+      width: 100%;
+      height: calc(100vh - 5rem);
+    }
+  }
+  
+  
+  @media screen and (max-width: 828px) {
+  
+    .tag-time{
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  
+    }
+  
+    .all-activities{
+      width: 100%;
+    }
+  
+    .tag-time p {
+      font-size: 13px;
+      margin: 6px;
+  }
+    
+    .msg-nav {
+      display: none;
+  }
+  .side-nav {
+    display: none;
+  }
+  
+  .main-content{
+    width: 100%;
+  }
+    .card-wrapper {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+     
+    
+    }
+    .card-wrapper2 {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+     
+    
+    }
+  
+    .card {
+      padding: 30px 20px;
+      margin-bottom: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      border: 1px solid #999;
+     
+     
+  }
+  
+  .card-1, .card-2, .card-3 {
+    justify-content: left;
+  }
+  .name {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .date-profile, .inner-date {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .wrapper {
+    display: contents;
+  }
+  
+  .activity-one-one, .activity-one{
+     flex-direction: column;
+  
+  }
+  
+  /*
+  for scrolling 
+  .all-activities {
+    width: 100%;
+    margin: auto;
+   height: fit-content;
+    overflow-y: auto;
+  
+  } */
+  
+  .date {
+    padding-top: 15px;
+  }
+  
+  .duration {
+    padding-top: 10px;
+    display: contents;
+  }
+  
+  .booking {
+    width: 100%;
+  }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .tag-time p {
+      font-size: 12px;
+      margin: 6px;
+  }
+  }
+
+  .freetrial span{
+font-size: 15px;
+font-style: italic;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(220, 82, 98, 1);
+margin-right: 5px;
+  }
+
+
+  .role-wrapper{
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-rows: 5.5rem;
+}
+
+
+.expimg img{
+    width: 90px;
+    height: 55px;
+}
+
+
+.main-content{
+    background-color: blueviolet;
+    background-color: #f4f4f4;
+    width: 100%;
+} 
+
+body{
+    background-color: #f4f4f4;
+
+}
+/*Header Style {others come from the board.css style sheet*/
+.jobrole-text{
+    font-weight: bold;
+}
+
+/*search nav styles*/
+
+/*Style for cards that display the job role*/
+.role-cards-wrapper{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 320px !important;
+    grid-auto-rows: 320px !important; */
+    grid-gap: 20px 25px;
+    height: calc(90vh - 3.5rem);
+    /* background-color: blue; */
+    overflow-y: scroll;
+    padding-right: 15px;
+}
+.role-card{
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    font-size: 13.5px;
+}
+.company-location,
+.tag-time,
+.com-loc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.com-loc img{
+    margin-right: 3px;
+}
+
+.service-position{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/*new addition to role expansion*/
+.roles-expand {
+    display: grid;
+}
+.card-expand{
+    /* background-color: rebeccapurple; */
+    background: rgba(255, 255, 255, 0.4);
+}
+.card-expand-content{
+    display: flex;
+    padding: 10px 15px 30px 15px;
+    background-color: #fff;
+}
+
+.card-expand-info p:first-child{
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+    color: #424243;
+    /* font-size: 15px; */
+}
+.card-expand-info{
+    margin-left: 15px;
+    flex-grow: 2;
+}
+/* .card-expand-button{
+    align-self: flex-end;
+} */
+.card-expand-button button{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+
+    margin-left: 10px;
+    /* font-weight: bold; */
+}
+
+.card-expand-button{
+    margin-bottom: -20px;
+}
+
+.card-expand-button img{
+    margin-bottom: -20px;
+}
+.card-expand-button-wrapper{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-expand-button-wrapper svg{
+    margin-left: auto;
+}
+.card-expand-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.icon-text{
+    display: flex;
+    align-items: center;
+}
+.icon-text p{
+    margin-right: 10px !important;
+    font-size: 13px;
+    color: #424243;
+}
+.card-expand-button button{
+    background: #A91F2F;
+    color: #fff;
+
+}
+/* .card-expand-button button:nth-child(2){
+    background-color: #fff;
+    color: #A91F2F;
+    border: 1px solid #c4c4c4;
+} */
+/*card expand body text*/
+.card-expand-body{
+    padding: 10px 15px;
+    color: #424243;
+    line-height: 1.45;
+/* background-color: yellow;     */
+    height: calc(90vh - 9rem);
+    font-size: 15.5px;
+    overflow-y: scroll;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+}
+ul{
+list-style-position: inside;
+}.card-expand-body h3{
+    margin: 20px 0;
+}
+.card-expand-body h4{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1114px) {
+    .role-cards-wrapper{
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .msg-nav {
+        display: none;
+    }
+    .side-nav {
+      display: none;
+    }
+    
+.card-expand{
+    margin-left: 0 ;
+}
+.card-expand-info{
+    margin-left: 19px;
+}
+.card-expand-body{
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+
+.card-expand-button{
+    margin-top: 10px;
+}
+
+.card-expand-content{
+    display: block;
+}
+.roles-expand{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.role-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.search-fields{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 7px;
+}
+
+
+
+.drop-down{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.input-search{
+    width: 100%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+  
+  
+  
+  
+</style>
+        <!--========== HEADER ==========-->
+        <div class="wrap">
+
+        <!--========== NAV ==========-->
+
+        <!--========== CONTENTS ==========-->
+       <section class="mymain">
+            <div class="role-wrapper">
+
+                <div class="main-content">
+
+
+                    <div class="roles-expand">
+                        <div class="card-expand">
+                            <div class="card-expand-content">
+                                <div class="expimg">
+                                    <img src="logos_linkedin.svg" alt="">                                </div>
+                                <div class="card-expand-info">
+                                    <p>Financial Services</p>
+                                    <p class="role-card-bold">Risk Consulting Director</p>
+                                    <div class="card-expand-icons">
+                                        <img src="img/location.svg" alt="">
+                                        <div class="icon-text">
+                                        <p>Abuja, Nigeria</p>
+                                        <p>Fulltime</p>
+                                        <p>2 mins ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-expand-button-wrapper">
+                                  <!-- <svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.044.299a.625.625 0 0 1 1.052.456V3.49a9.069 9.069 0 0 1 3.508.788c2.201.998 4.463 3.187 4.988 7.78a.625.625 0 0 1-1.036.538c-2.168-1.927-4.199-2.757-5.668-3.11a8.856 8.856 0 0 0-1.792-.25v2.768a.625.625 0 0 1-1.052.456l-6-5.625a.625.625 0 0 1 0-.912l6-5.625Zm.5 4.452h-.012a.625.625 0 0 1-.686-.621V2.197L2.386 6.38l4.46 4.182V8.63a.62.62 0 0 1 .548-.62h.003l.005-.001.014-.002a6.752 6.752 0 0 1 .772-.018c.672.028 1.339.123 1.992.283 1.34.322 3.05.986 4.889 2.327-.743-3.04-2.432-4.48-3.98-5.181a7.825 7.825 0 0 0-3.546-.667ZM16.72.88a3.125 3.125 0 0 1 3.125 3.125v10.75a3.125 3.125 0 0 1-3.125 3.125H5.971a3.125 3.125 0 0 1-3.125-3.125V13.63a.625.625 0 0 1 1.25 0v1.125a1.875 1.875 0 0 0 1.875 1.875h10.75a1.875 1.875 0 0 0 1.875-1.875V4.005a1.875 1.875 0 0 0-1.875-1.875h-4.125a.625.625 0 0 1 0-1.25h4.125Z" fill="#424243"/></svg> -->
+                                    <div class="card-expand-button">
+                                        <img src="Frame 1573.svg" alt="">
+                                        <img src="Frame 1575.svg" alt="">
+                                    
+                                        <!-- <button>Save</button> -->
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-expand-body">
+                                <p>
+                                    Our vision is to become the leading platform that allows people in  Risk Consulting Director to engage in social commerce in a safe and convenient way. Our mission is to empower people in Africa by giving them the opportunity to participate in e-commerce and fulfil every transaction with everyone, anywhere in thewe will implement these health checkers that Admin can administer to their staff and record results - this measures how the staffs level of activity influences their health... we will prompt them to administer them 
+                                </p>
+                                <h3>Job Description</h3>
+                                <p>
+                                    We are looking for a user-interface/user-experience Risk Consulting Director able to understand our business requirements and any technical limitations, as well as be responsible for conceiving nto sitemaps, user flows, customerwe will implement these health checkers that Admin can administer to their staff and record results - this measures how the staffs level of activity influences their health... we will prompt them to administer them regularly  overall functionality of the product, and in order to ensure a great user experience, iterate upon it in accordance with user-testing.
+                                </p>
+                                <h4>Responsiblities</h4>
+                                <ul>
+                                    <li>Translate concepts into user flows, Risk Consulting Director that lead to intuitive </li>
+                                    <li>Facilitate the client’s product vision by researching, conceiving, sketching, prototyping and</li>
+                                    <li>Design and deliver Risk Consulting Directors, and mockups Risk Consulting Director wide</li>
+                                    <li>Identify design problems and devise elegant solutions.</li>
+                                    <li>Make strategic design andRisk Consulting Director decisions related to core, and new, functions and </li>
+                                    <li>Take a user-centered</li>
+                                </ul>
+                                <ul>
+                                    <li>Translate concepts into user flows, Risk Consulting Director that lead to intuitive </li>
+                                    <li>Facilitate the client’s product vision by researching, conceiving, sketching, prototyping and</li>
+                                    <li>Design and deliver Risk Consulting Directors, and mockups Risk Consulting Director wide</li>
+                                    <li>Identify design problems and devise elegant solutions.</li>
+                                    <li>Make strategic design andRisk Consulting Director decisions related to core, and new, functions and </li>
+                                    <li>Take a user-centered</li>
+                                </ul>
+                                <ul>
+                                    <li>Translate concepts into user flows, Risk Consulting Director that lead to intuitive </li>
+                                    <li>Facilitate the client’s product vision by researching, conceiving, sketching, prototyping and</li>
+                                    <li>Design and deliver Risk Consulting Directors, and mockups Risk Consulting Director wide</li>
+                                    <li>Identify design problems and devise elegant solutions.</li>
+                                    <li>Make strategic design andRisk Consulting Director decisions related to core, and new, functions and </li>
+                                    <li>Take a user-centered</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        </div>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
